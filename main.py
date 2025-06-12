@@ -1,6 +1,10 @@
-from controller import controller
+from controller.controller import valid
 
-nome = input('Digite seu nome: ')
-senha = input ('Digite sua senha: ')
+def main():
+    nome = input('Digite seu nome: ')
+    senha = input ('Digite sua senha: ')
 
-controller.valid(nome,senha)
+    user_valid = valid(nome,senha)
+    print(user_valid)
+if __name__ == "__main__":
+    main()
