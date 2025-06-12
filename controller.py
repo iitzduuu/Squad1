@@ -1,10 +1,10 @@
-from models import models
-
-listaName = ['User' , 'User2']
-listaSenha = ['123', '456']
-
+from models.models import Createmessage
 def valid(nome, senha):
-   if nome in listaName and senha in listaSenha:
-        print(models.mensagem)
+   users = {
+       "User" : "123",
+       "User2" : "1234"
+   }
+   if nome in users and users[nome] == senha:
+        return Createmessage.mensagem()
    else:
-        print('Usuário inválido')
+        return 'Usuário inválido'
