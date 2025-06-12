@@ -1,3 +1,10 @@
+from abc import ABC, abstractmethod
 
-def mensagem():
-     return "Hello Word , Gilberto is the best teacher in UFBA"
+class  Message(ABC):
+     @abstractmethod
+     def mensagem():
+          pass
+
+class Createmessage(Message):
+     def mensagem():
+          return  'Hello Word, Oi pai!'
